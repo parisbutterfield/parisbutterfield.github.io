@@ -1,0 +1,319 @@
+@CHARSET "ISO-8859-1";
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+a{
+	text-decoration:none;
+}
+table {
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
+}
+
+
+h1 {
+  font-family: 'Electrolize', sans-serif;
+}
+
+ h2, h3, h4 {
+  font-weight: normal;
+  color:#dbdcdd;
+  font-family: 'Lato', sans-serif;
+}
+
+#up,#down {
+  color: white;
+  padding-bottom:2px;
+  /*width: 15px;*/
+}
+
+#up{
+
+  /*margin-left: 35px;*/
+}
+
+
+ #footer{
+  position:fixed;
+  width: 100%;
+  z-index:9;
+  text-align:center;
+  padding: 20px 0 0 0;
+}
+
+#header{
+  top:0px;
+}
+#footer{
+  bottom:0px;
+  font-size: 200%;
+}
+
+#fp-nav.left {
+  margin-top: -30%;
+}
+
+#icons {
+  margin-top:5px;
+}
+
+.project ul{
+  list-style: circle;
+  list-style-position: inside;
+  color:white;
+}
+
+#section2.h1{
+  color:#337ab7;
+}
+
+    /*==========  Non-Mobile First Method  ==========*/
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 993px) {
+    	h1{
+    		font-size: 500%;
+        color:purple;
+    	}
+
+      h2 {
+        font-size:250%;
+      }
+
+      h3, h4 {
+        font-size: 175%;
+      }
+
+      li {
+        font-size: 175%
+      }
+
+      .social-svg {
+          width:5%;
+       }
+
+       #icons {
+         margin-left: 20%;
+         width: 100%;
+       }
+
+       #fp-nav.left {
+         margin-top: -25%;
+       }
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+      h1 {
+        color: orange;
+        font-size: 400%;
+
+      }
+
+      h2 {
+        font-size : 250%;
+      }
+
+      h3, h4 {
+        font-size: 150%;
+      }
+
+
+      .social-svg {
+          width:7%;
+       }
+
+       #icons {
+         margin-left: 10%;
+         width: 100%;
+       }
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+    	 h1{
+    		font-size: 450%;
+        color:green;
+    	}
+
+      h2{
+        font-size:225%;
+      }
+
+      h3, h4{
+        font-size: 150%;
+      }
+
+      .social-svg {
+		      width:5%;
+		   }
+
+       #icons {
+         margin-left: 20%;
+         width: 100%;
+       }
+
+       #footer{
+         font-size: 175%;
+       }
+    }
+
+    /* Extra Small Devices, Phones */
+    @media only screen and (max-width : 480px) {
+    	h1{
+    		font-size: 250%;
+        color:red;
+    	}
+
+      h2{
+        font-size:125%;
+      }
+
+      h3,h4{
+        font-size:100%;
+      }
+
+      .social-svg{
+        width:10%;
+      }
+
+
+      #icons {
+        margin-left: 10%;
+        width: 100%;
+      }
+
+      .video {
+			width: 350px;
+			height: 300px;
+		  }
+
+      #fp-nav.left {
+        margin-top: -55%;
+      }
+
+      #footer{
+        font-size: 150%;
+      }
+
+      .fp-controlArrow {
+        top: 90%;
+      }
+
+      .fp-controlArrow.fp-prev {
+    border-width: 20px 20px 20px 0;
+  }
+
+  .fp-controlArrow.fp-next {
+border-width: 20px 0 20px 20px;
+}
+
+    }
+
+    /* Custom, iPhone Retina */
+    @media only screen and (max-width : 320px) {
+      h1{
+        font-size: 200%;
+        color:blue;
+      }
+
+      h2{
+        font-size: 125%;
+      }
+
+      .social-svg{
+        width:10%;
+      }
+
+      #icons {
+        margin-left: 15%;
+        width: 100%;
+      }
+
+        .video {
+          width: 300px;
+          height: 250px;
+        }
+
+        #fp-nav.left {
+          margin-top: -60%;
+        }
+
+        #footer{
+          font-size: 125%;
+        }
+
+        .fp-controlArrow {
+          top: 90%;
+        }
+
+        .fp-controlArrow.fp-prev {
+      border-width: 20px 20px 20px 0;
+    }
+
+    .fp-controlArrow.fp-next {
+  border-width: 20px 0 20px 20px;
+  }
+
+    }
+
+    /* Centered texts in each section
+  	* --------------------------------------- */
+  	.section{
+  		text-align:center;
+  	}
+
+  	/* Overwriting styles for control arrows for slides
+  	* --------------------------------------- */
+  	.controlArrow.prev {
+  		left: 50px;
+  	}
+  	.controlArrow.next{
+  		right: 50px;
+  	}
+
+    .slide h3{
+      color: #ababad;
+      margin-bottom: 5px;
+    }
+
+    .glyphicon-arrow-up {
+      size: 10%;
+    }
+
+    h1{
+      color:#337ab7;
+    }
+
+    h4 {
+      color:#f18624;
+    }
